@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BookNest - Featured Books">
+    <title>Featured Books | BookNest</title>
+    <!-- Google Fonts for premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Book<span>Nest</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="featured.html" style="color: var(--gold-primary);">Featured</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="nav-actions">
+                <button class="cart-btn" aria-label="View Cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Spacing -->
+    <div style="height: 80px;"></div>
+
+    <!-- Featured Books Section -->
+    <section class="featured-section" style="padding-top: 3rem;">
+        <div class="section-container">
+            <h1 class="section-title">Featured <span class="text-gold">Books</span></h1>
+            <p style="text-align: center; color: var(--text-secondary); margin-bottom: 3rem; font-size: 1.1rem;">Explore our hand-picked collection of must-have books.</p>
+            <div class="book-grid">
+                <!-- Book 1 -->
+                <article class="book-card">
+                    <div class="book-image-container">
+                        <img src="images/book_atomic_habits.png" alt="Atomic Habits" class="book-image">
+                        <div class="book-overlay">
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                            <button class="view-details-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Atomic Habits</h3>
+                        <p class="book-author">A practical guide to building good habits and breaking bad ones.</p>
+                        <p class="book-price">₹499</p>
+                    </div>
+                </article>
+
+                <!-- Book 2 -->
+                <article class="book-card">
+                    <div class="book-image-container">
+                        <img src="images/book_alchemist.png" alt="The Alchemist" class="book-image">
+                        <div class="book-overlay">
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                            <button class="view-details-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">The Alchemist</h3>
+                        <p class="book-author">A magical story about following your dreams.</p>
+                        <p class="book-price">₹299</p>
+                    </div>
+                </article>
+
+                <!-- Book 3 -->
+                <article class="book-card">
+                    <div class="book-image-container">
+                        <img src="images/book_rich_dad.png" alt="Rich Dad Poor Dad" class="book-image">
+                        <div class="book-overlay">
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                            <button class="view-details-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Rich Dad Poor Dad</h3>
+                        <p class="book-author">Learn important lessons about money and investing.</p>
+                        <p class="book-price">₹399</p>
+                    </div>
+                </article>
+
+                <!-- Book 4 -->
+                <article class="book-card">
+                    <div class="book-image-container">
+                        <img src="images/book_wings_of_fire.png" alt="Wings of Fire" class="book-image">
+                        <div class="book-overlay">
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                            <button class="view-details-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Wings of Fire</h3>
+                        <p class="book-author">Inspiring journey of India’s former President.</p>
+                        <p class="book-price">₹350</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Book<span>Nest</span></a>
+                <p>Your online destination for books.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="featured.html">Featured Books</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Get in Touch</h4>
+                <p>We’d love to hear from you!</p>
+                <p style="margin-top: 1rem; color: var(--gold-primary);">Email: <span style="color: var(--text-secondary);">support@booknest.com</span></p>
+                <p style="color: var(--gold-primary);">Phone: <span style="color: var(--text-secondary);">+91 9876543210</span></p>
+                <p style="color: var(--gold-primary);">Address: <span style="color: var(--text-secondary);">Pune, Maharashtra, India</span></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 BookNest. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

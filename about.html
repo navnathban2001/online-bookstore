@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BookNest - About Us">
+    <title>About Us | BookNest</title>
+    <!-- Google Fonts for premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-hero {
+            position: relative;
+            height: 50vh;
+            background-image: url('images/about_us_image.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 60px;
+        }
+        .about-hero-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(10, 10, 10, 0.7);
+        }
+        .about-hero h1 {
+            position: relative;
+            z-index: 10;
+            font-size: 3.5rem;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Book<span>Nest</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="featured.html">Featured</a></li>
+                <li><a href="about.html" style="color: var(--gold-primary);">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="nav-actions">
+                <button class="cart-btn" aria-label="View Cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Spacing -->
+    <div class="about-hero">
+        <div class="about-hero-overlay"></div>
+        <h1>Our <span class="text-gold">Story</span></h1>
+    </div>
+
+    <!-- About Section -->
+    <section class="about-section" style="border-top: none;">
+        <div class="section-container">
+            <div class="about-content">
+                <h2 class="section-title">Who <span class="text-gold">We Are</span></h2>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem;">BookNest is an online bookstore created to make reading easy and affordable for everyone.</p>
+                
+                <h3 style="color: var(--gold-primary); font-family: 'Cinzel', serif; margin-top: 2rem; margin-bottom: 1rem; font-size: 1.8rem;">Our Mission</h3>
+                <p style="font-size: 1.1rem; max-width: 600px; margin: 0 auto; margin-bottom: 4rem;">To encourage reading habits by providing quality books at the best prices.</p>
+
+                <h3 style="color: var(--gold-primary); font-family: 'Cinzel', serif; margin-top: 2rem; margin-bottom: 2rem; font-size: 1.8rem;">Highlights & What We Offer</h3>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">📚</div>
+                        <h4>Wide Collection</h4>
+                        <p>Academic, Novels, Fiction, Self-Help & Exam Books.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🚀</div>
+                        <h4>Fast Delivery</h4>
+                        <p>Receive your books quickly and reliably.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🔒</div>
+                        <h4>Secure Payments</h4>
+                        <p>Safe and multiple payment options available.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">⭐</div>
+                        <h4>Trusted</h4>
+                        <p>Trusted by readers all over the country.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Book<span>Nest</span></a>
+                <p>Your online destination for books.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="featured.html">Featured Books</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Get in Touch</h4>
+                <p>We’d love to hear from you!</p>
+                <p style="margin-top: 1rem; color: var(--gold-primary);">Email: <span style="color: var(--text-secondary);">support@booknest.com</span></p>
+                <p style="color: var(--gold-primary);">Phone: <span style="color: var(--text-secondary);">+91 9876543210</span></p>
+                <p style="color: var(--gold-primary);">Address: <span style="color: var(--text-secondary);">Pune, Maharashtra, India</span></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 BookNest. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BookNest - Your online destination for books that inspire, educate, and entertain.">
+    <title>BookNest | Online Bookstore</title>
+    <!-- Google Fonts for premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Book<span>Nest</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html" style="color: var(--gold-primary);">Home</a></li>
+                <li><a href="featured.html">Featured</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="nav-actions">
+                <button class="cart-btn" aria-label="View Cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to <span class="text-gold">BookNest</span></h1>
+            <p class="hero-subtitle">Your online destination for books that inspire, educate, and entertain.<br>Explore a wide range of books across genres and discover your next great read.</p>
+            <a href="#featured" class="cta-button">Browse Featured Books</a>
+        </div>
+    </header>
+
+    <!-- Intro Section -->
+    <section class="intro-section" style="background-color: var(--bg-darker); text-align: center; padding: 4rem 2rem; border-bottom: 1px solid var(--border-color);">
+        <div class="section-container" style="padding: 0;">
+            <p style="font-size: 1.2rem; color: var(--text-secondary); max-width: 800px; margin: 0 auto;">
+                At BookNest, we bring you the best collection of books at affordable prices. 
+                Whether you're a student, reader, or professional — we have something for everyone.
+            </p>
+        </div>
+    </section>
+
+    <!-- Featured Books Section -->
+    <section id="featured" class="featured-section">
+        <div class="section-container">
+            <h2 class="section-title">Featured <span class="text-gold">Books</span></h2>
+            <div class="book-grid">
+                <!-- Book 1 -->
+                <article class="book-card">
+                    <div class="book-image-container">
+                        <img src="images/book_atomic_habits.png" alt="Atomic Habits" class="book-image">
+                        <div class="book-overlay">
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                            <button class="view-details-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Atomic Habits</h3>
+                        <p class="book-author">A practical guide to building good habits and breaking bad ones.</p>
+                        <p class="book-price">₹499</p>
+                    </div>
+                </article>
+
+                <!-- Book 2 -->
+                <article class="book-card">
+                    <div class="book-image-container">
+                        <img src="images/book_alchemist.png" alt="The Alchemist" class="book-image">
+                        <div class="book-overlay">
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                            <button class="view-details-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">The Alchemist</h3>
+                        <p class="book-author">A magical story about following your dreams.</p>
+                        <p class="book-price">₹299</p>
+                    </div>
+                </article>
+
+                <!-- Book 3 -->
+                <article class="book-card">
+                    <div class="book-image-container">
+                        <img src="images/book_rich_dad.png" alt="Rich Dad Poor Dad" class="book-image">
+                        <div class="book-overlay">
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                            <button class="view-details-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Rich Dad Poor Dad</h3>
+                        <p class="book-author">Learn important lessons about money and investing.</p>
+                        <p class="book-price">₹399</p>
+                    </div>
+                </article>
+
+                <!-- Book 4 -->
+                <article class="book-card">
+                    <div class="book-image-container">
+                        <img src="images/book_wings_of_fire.png" alt="Wings of Fire" class="book-image">
+                        <div class="book-overlay">
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                            <button class="view-details-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Wings of Fire</h3>
+                        <p class="book-author">Inspiring journey of India’s former President.</p>
+                        <p class="book-price">₹350</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <div class="about-content">
+                <h2 class="section-title">Who <span class="text-gold">We Are</span></h2>
+                <p>BookNest is an online bookstore created to make reading easy and affordable for everyone.</p>
+                
+                <h3 style="color: var(--gold-primary); font-family: 'Cinzel', serif; margin-top: 2rem; margin-bottom: 1rem; font-size: 1.5rem;">Our Mission</h3>
+                <p>To encourage reading habits by providing quality books at the best prices.</p>
+
+                <h3 style="color: var(--gold-primary); font-family: 'Cinzel', serif; margin-top: 2rem; margin-bottom: 2rem; font-size: 1.5rem;">Highlights & What We Offer</h3>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">📚</div>
+                        <h4>Wide Collection</h4>
+                        <p>Academic, Novels, Fiction, Self-Help & Exam Books.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🚀</div>
+                        <h4>Fast Delivery</h4>
+                        <p>Receive your books quickly and reliably.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🔒</div>
+                        <h4>Secure Payments</h4>
+                        <p>Safe and multiple payment options available.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">⭐</div>
+                        <h4>Trusted</h4>
+                        <p>Trusted by readers all over the country.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact Section -->
+    <footer id="contact" class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">Book<span>Nest</span></a>
+                <p>Your online destination for books.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="featured.html">Featured Books</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Get in Touch</h4>
+                <p>We’d love to hear from you!</p>
+                <p style="margin-top: 1rem; color: var(--gold-primary);">Email: <span style="color: var(--text-secondary);">support@booknest.com</span></p>
+                <p style="color: var(--gold-primary);">Phone: <span style="color: var(--text-secondary);">+91 9876543210</span></p>
+                <p style="color: var(--gold-primary);">Address: <span style="color: var(--text-secondary);">Pune, Maharashtra, India</span></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 BookNest. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
